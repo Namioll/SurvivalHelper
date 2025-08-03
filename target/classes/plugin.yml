@@ -1,0 +1,9 @@
+name: SurvivalHelper
+version: '1.0'
+main: me.namioll.survivalHelper.SurvivalHelper
+api-version: '1.21'
+authors: [ Namioll_ ]
+description: Помощник для твоего сервера по выживанию!
+commands:
+  sv:
+    description: Главная админская команда.
