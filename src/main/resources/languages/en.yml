@@ -1,0 +1,34 @@
+messages:
+  no-permission: "§cSorry, but you don't have permission! :c"
+  player-not-found: "§cError! Player not found."
+  config-reloaded: "§aConfiguration successfully reloaded."
+  roots-granted: "§aYou have successfully granted rights to the player."
+  roots-revoked: "§cYou have successfully revoked rights from the player."
+  no-roots-permission: "§cYou cannot do this until an administrator considers you a trusted player."
+  console-only: "§cThis command is only available from console!"
+  player-only: "§cThis command is only available to players!"
+
+help:
+  main: |
+    §6==== SurvivalHelper Help ====
+    §c/sv roots [Nick] §7- give/take player rights to play fully
+    §c/sv reload §7- reload configuration
+    §c/sv lang [language] §7- change plugin language
+    §6==============================
+  roots: "§c/sv roots [Nick] §7- give/take player rights to play fully"
+  reload: "§c/sv reload §7- reload configuration"
+  language: "§c/sv lang [language] §7- change plugin language"
+
+language:
+  changed: "§aLanguage successfully changed to: §f{language}"
+  not-found: "§cLanguage '{language}' not found! Available languages: {languages}"
+  current: "§eCurrent language: §f{language}"
+  available: "§eAvailable languages: §f{languages}"
+
+chat:
+  prefix:
+    default: "&7Player"
+  format:
+    admin: "{prefix}§6 {name}"
+    no-roots: "{prefix}§8 {name}"
+    with-roots: "{prefix}§f {name}"

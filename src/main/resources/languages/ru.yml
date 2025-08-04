@@ -1,0 +1,34 @@
+messages:
+  no-permission: "§cИзвините, но у вас нет прав! :с"
+  player-not-found: "§cОшибка! Игрок не найден."
+  config-reloaded: "§aКонфигурация успешно перезагружена."
+  roots-granted: "§aВы успешно выдали игроку права."
+  roots-revoked: "§cВы успешно забрали права у игрока."
+  no-roots-permission: "§cВы не можете сделать это, пока администратор не посчитает Вас честным игроком."
+  console-only: "§cЭта команда доступна только из консоли!"
+  player-only: "§cЭта команда доступна только игрокам!"
+
+help:
+  main: |
+    §6==== SurvivalHelper Помощь ====
+    §c/sv roots [Ник] §7- дать/отнять игроку право играть полноценно
+    §c/sv reload §7- перезагрузить конфигурацию
+    §c/sv lang [язык] §7- изменить язык плагина
+    §6================================
+  roots: "§c/sv roots [Ник] §7- дать/отнять игроку право играть полноценно"
+  reload: "§c/sv reload §7- перезагрузить конфигурацию"
+  language: "§c/sv lang [язык] §7- изменить язык плагина"
+
+language:
+  changed: "§aЯзык успешно изменен на: §f{language}"
+  not-found: "§cЯзык '{language}' не найден! Доступные языки: {languages}"
+  current: "§eТекущий язык: §f{language}"
+  available: "§eДоступные языки: §f{languages}"
+
+chat:
+  prefix:
+    default: "&7Игрок"
+  format:
+    admin: "{prefix}§6 {name}"
+    no-roots: "{prefix}§8 {name}"
+    with-roots: "{prefix}§f {name}"
