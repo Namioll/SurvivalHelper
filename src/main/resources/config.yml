@@ -1,0 +1,41 @@
+# Plugin language (available: ru, en)
+# Плагин будет искать файлы в папке languages/
+language: ru
+
+# Chat settings
+chat:
+  enable-custom-format: true
+
+# Default permissions for new players
+permissions:
+  new-player-roots: false
+
+# Block restrictions for players without roots
+restrictions:
+  blocks:
+    # Blocks that cannot be broken without roots
+    break:
+      - "CHEST"
+      - "SHULKER_BOX"
+      - "ENDER_CHEST"
+      - "TRAPPED_CHEST"
+    
+    # Blocks that cannot be placed without roots
+    place:
+      - "TNT"
+      - "HOPPER"
+      - "DROPPER"
+      - "DISPENSER"
+    
+    # Blocks that cannot be interacted with without roots
+    interact:
+      - "CHEST"
+      - "SHULKER_BOX"
+      - "ENDER_CHEST"
+      - "TRAPPED_CHEST"
+      - "HOPPER"
+      - "DROPPER"
+      - "DISPENSER"
+
+# Player data will be stored here automatically
+players: {}
