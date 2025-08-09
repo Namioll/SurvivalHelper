@@ -1,9 +1,25 @@
 name: SurvivalHelper
-version: '1.0'
+version: 2.0.0
 main: me.namioll.survivalHelper.SurvivalHelper
-api-version: '1.21'
-authors: [ Namioll_ ]
-description: Помощник для твоего сервера по выживанию!
+api-version: 1.19
+author: namioll
+description: Advanced survival helper plugin with modern architecture and localization
+
 commands:
   sv:
-    description: Главная админская команда.
+    description: Main SurvivalHelper command
+    usage: |
+      /<command> - show help
+      /<command> roots [player] - give/take player rights
+      /<command> reload - reload configuration
+      /<command> lang [language] - change plugin language
+    permission: survivalhelper.admin
+    permission-message: "§cВы не имеете прав для использования этой команды!"
+
+permissions:
+  survivalhelper.admin:
+    description: Allows access to admin commands
+    default: op
+  survivalhelper.roots:
+    description: Allows full gameplay permissions
+    default: false
